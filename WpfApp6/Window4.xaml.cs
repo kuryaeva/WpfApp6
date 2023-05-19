@@ -48,7 +48,7 @@ namespace WpfApp6
             }
             else
             {
-                MessageBox.Show("Сначала заполните все поля!");
+                MessageBox.Show("Сначала заполните все поля!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

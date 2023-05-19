@@ -1,14 +1,71 @@
-﻿<Page x:Class="WpfApp6.ViewFolder.PageFolder.ViewingSchedulePage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WpfApp6.ViewFolder.PageFolder"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="ViewingSchedulePage">
-
+﻿<Page 
+    x:Class="WpfApp6.ViewFolder.PageFolder.ViewingSchedulePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:WpfApp6.ViewFolder.PageFolder"
+    mc:Ignorable="d" 
+    Style="{DynamicResource BodyPageStyle}">
     <Grid>
-        
+        <StackPanel 
+            Orientation="Vertical"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left"
+            Margin="50 80 0 0">
+            <TextBlock
+                Text="Просмотр детей осуществляется по расписанию:"
+                Margin="0 0 0 10"
+                FontWeight="Bold"
+                FontSize="23"/>
+            <TextBlock
+                Margin="0 10 0 0"
+                FontSize="19">
+                <StackPanel Margin="10 0 0 0" Orientation="Vertical">
+                    <TextBlock
+                        Text="Дети 2011 - 2014 г.р. - просмотр по будням в 14.30 и в 15.15;"
+                        Margin="0 0 0 5"/>
+                     <TextBlock
+                        Text="Дети 2008 - 2010 г.р. - просмотр по будням в 18.15"
+                        Margin="0 5 0 0"/>
+                </StackPanel>
+            </TextBlock>
+            <TextBlock
+                FontWeight="Bold" 
+                Margin="0 50 0 0"
+                FontSize="19">
+                <StackPanel Margin="0 0 0 0" Orientation="Vertical">
+                    <TextBlock
+                        Text="Старший тренер: Бычихин Юрий Юрьевичтел. 8-916-087-55-80;"
+                        Margin="0 0 0 5"/>
+                     <TextBlock
+                        Text="Тренер: Кутузов Андрей Евгеньевич тел. 8-926-224-20-75;"
+                        Margin="0 5 0 5"/>
+                    <TextBlock
+                        Text="Тренер: Чулей Сергей Алексеевич тел. 8-926-254-11-97"
+                        Margin="0 5 0 0"/>
+                </StackPanel>
+            </TextBlock>
+        </StackPanel>
+        <Button
+            Content="Записать на просмотр"
+            x:Name="RecordViewingButton"
+            Click="RecordViewingButton_Click"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Right"
+            Margin="20"
+            Style="{DynamicResource MainButton}"/>
+        <TextBlock
+            FontSize="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Margin="20">
+            <Hyperlink 
+                x:Name="BackHyperlink"
+                Click="BackHyperlink_Click"
+                Foreground="#000000">
+                Вернуться на главную
+            </Hyperlink>
+        </TextBlock>
     </Grid>
 </Page>

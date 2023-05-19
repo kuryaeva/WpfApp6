@@ -117,6 +117,9 @@
     <Compile Include="ViewFolder\PageFolder\PupilsPage.xaml.cs">
       <DependentUpon>PupilsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewFolder\PageFolder\RecordViewingPage.xaml.cs">
+      <DependentUpon>RecordViewingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewFolder\PageFolder\ViewingSchedulePage.xaml.cs">
       <DependentUpon>ViewingSchedulePage.xaml</DependentUpon>
     </Compile>
@@ -173,6 +176,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewFolder\PageFolder\PupilsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewFolder\PageFolder\RecordViewingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

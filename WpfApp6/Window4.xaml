@@ -180,5 +180,7 @@
                     Name="Datedp"
                     VerticalAlignment="Top"
                     Width="120"/>
+        <Button Grid.Column="1" Content="Button" Height="0" Margin="403,29,77,260" Grid.Row="1" Width="0"/>
+        <TextBlock Grid.Column="1" Margin="426,94,54,195" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock"/>
     </Grid>
 </Window>

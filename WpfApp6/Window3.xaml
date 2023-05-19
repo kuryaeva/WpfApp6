@@ -48,7 +48,8 @@
                FontWeight="Bold" 
                FontSize="23"/>
 
-        <TextBlock TextWrapping="Wrap" Text="Дети 2011 - 2014 г.р. - просмотр по будням в 14.30 и в 15.15;  Дети 2008 - 2010 г.р. - просмотр по будням в 18.15" 
+        <TextBlock TextWrapping="Wrap" 
+                   Text="Дети 2011 - 2014 г.р. - просмотр по будням в 14.30 и в 15.15;  Дети 2008 - 2010 г.р. - просмотр по будням в 18.15" 
                    HorizontalAlignment="Left" 
                    Margin="30,47,0,0" 
                    Grid.Row="1"
@@ -57,7 +58,8 @@
                    FontSize="19" 
                    Width="534"/>
         
-        <TextBlock TextWrapping="Wrap" Text="Старший тренер: Бычихин Юрий Юрьевич тел. 8-916-087-55-80; Тренер: Кутузов Андрей  Евгеньевич тел. 8-926-224-20-75;"  
+        <TextBlock TextWrapping="Wrap" 
+                   Text="Старший тренер: Бычихин Юрий Юрьевич тел. 8-916-087-55-80; Тренер: Кутузов Андрей  Евгеньевич тел. 8-926-224-20-75;"  
                    HorizontalAlignment="Left" 
                    Margin="30,111,0,0" 
                    Grid.Row="1"

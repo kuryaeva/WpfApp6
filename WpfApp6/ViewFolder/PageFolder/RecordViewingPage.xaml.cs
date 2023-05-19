@@ -15,16 +15,11 @@ using System.Windows.Shapes;
 
 namespace WpfApp6.ViewFolder.PageFolder
 {
-    public partial class ApplicationEnrollmentPage : Page
+    public partial class RecordViewingPage : Page
     {
-        public ApplicationEnrollmentPage()
+        public RecordViewingPage()
         {
             InitializeComponent();
-        }
-
-        private void RecordViewingButton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void BackHyperlink_Click(object sender, RoutedEventArgs e)
