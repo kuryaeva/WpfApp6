@@ -7,6 +7,220 @@
     mc:Ignorable="d" 
     Style="{DynamicResource BodyPageStyle}">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock
+            Text="Заявка руководителю на зачисление воспитанника"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0 10 0 10"
+            FontWeight="Bold" 
+            FontSize="20" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20">
+                <TextBlock
+                    Text="Сведения о ребенке"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Margin="0 10 0 10"
+                    FontWeight="Bold" 
+                    FontSize="20"/>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Text="Фамилия"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="24"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Text="Имя"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="24"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Text="Отчество"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="24"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Text="Дата рождения"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <DatePicker
+                        Margin="10 0 0 0"
+                        Width="420"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Top"
+                        Text="Адресс проживания"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        TextWrapping="Wrap"
+                        MinHeight="24"
+                        MaxHeight="100"
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="auto"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Top"
+                        TextWrapping="Wrap"
+                        Width="150"
+                        Text="Наименование образовательного учреждения"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        TextWrapping="Wrap"
+                        MinHeight="24"
+                        MaxHeight="100"
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="auto"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20">
+                <TextBlock
+                    Text="Сведения о родителе"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Margin="0 10 0 10"
+                    FontWeight="Bold" 
+                    FontSize="20"/>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Text="Фамилия"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="24"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Text="Имя"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="24"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Text="Отчество"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="24"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Top"
+                        Text="Место работы"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        TextWrapping="Wrap"
+                        MinHeight="24"
+                        MaxHeight="100"
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="auto"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock
+                        VerticalAlignment="Top"
+                        Text="Номер телефона"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <TextBox
+                        Margin="10 0 0 0"
+                        Width="420"
+                        Height="24"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Text="Информация о ком из родителей"
+                        Margin="0 0 10 0"
+                        FontWeight="Bold"
+                        FontSize="15"/>
+                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Margin="10 0 0 0">
+                        <CheckBox 
+                            Content="Мать"
+                            Margin="0 0 10 0"/>
+                        <CheckBox 
+                            Content="Отец"
+                            Margin="10 0 0 0"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <Button
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Content="Отправить заявку"
+                x:Name="SendRequestButton"
+                Click="SendRequestButton_Click"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Margin="20"
+                Style="{DynamicResource MainButton}"/>
+            <TextBlock
+                FontSize="20"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="20">
+                <Hyperlink 
+                    x:Name="BackHyperlink"
+                    Click="BackHyperlink_Click"
+                    Foreground="#000000">
+                    Вернуться на главную
+                </Hyperlink>
+            </TextBlock>
+        </Grid>
     </Grid>
 </Page>

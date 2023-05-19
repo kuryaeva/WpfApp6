@@ -23,7 +23,6 @@
                     FontWeight="Bold"
                     FontSize="15"/>
                 <TextBox
-                    MaxLength="50"
                     Margin="10 0 0 0"
                     Width="580"
                     Height="24"/>
@@ -36,7 +35,6 @@
                     FontWeight="Bold"
                     FontSize="15"/>
                 <TextBox
-                    MaxLength="50"
                     Margin="10 0 0 0"
                     Width="580"
                     Height="24"/>
@@ -49,7 +47,6 @@
                     FontWeight="Bold"
                     FontSize="15"/>
                 <TextBox
-                    MaxLength="3"
                     Margin="10 0 0 0"
                     Width="580"
                     Height="24"/>
@@ -73,7 +70,6 @@
                     FontWeight="Bold"
                     FontSize="15"/>
                 <TextBox
-                    MaxLength="11"
                     Margin="10 0 0 0"
                     Width="580"
                     Height="24"/>
@@ -92,8 +88,8 @@
             </StackPanel>
             <Button
                 Content="Записать"
-                x:Name="RecordViewingButton"
-                Click="RecordViewingButton_Click"
+                x:Name="RecordButton"
+                Click="RecordButton_Click"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
                 Margin="20"

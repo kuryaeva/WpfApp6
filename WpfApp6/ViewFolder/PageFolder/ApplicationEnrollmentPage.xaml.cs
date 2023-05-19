@@ -22,12 +22,12 @@ namespace WpfApp6.ViewFolder.PageFolder
             InitializeComponent();
         }
 
-        private void RecordViewingButton_Click(object sender, RoutedEventArgs e)
+        private void BackHyperlink_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void BackHyperlink_Click(object sender, RoutedEventArgs e)
+        private void SendRequestButton_Click(object sender, RoutedEventArgs e)
         {
 
         }

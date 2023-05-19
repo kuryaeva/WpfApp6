@@ -26,5 +26,10 @@ namespace WpfApp6.ViewFolder.PageFolder
         {
 
         }
+
+        private void RecordButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
