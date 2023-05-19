@@ -40,7 +40,7 @@
         <Label Content="Запись на просмотр"
                Grid.Column="1" 
                HorizontalAlignment="Left" 
-               Margin="167,132,0,0" 
+               Margin="179,137,0,0" 
                VerticalAlignment="Top"
                FontWeight="Bold" 
                FontSize="20" 
@@ -62,7 +62,8 @@
                  Grid.Row="1" 
                  TextWrapping="Wrap"
                  VerticalAlignment="Top" 
-                 Width="100"/>
+                 Name="NameTb"
+                 Width="120"/>
         
         <Label Content="Имя" 
                Grid.Column="1" 
@@ -80,7 +81,8 @@
                  Grid.Row="1" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
-                 Width="100"/>
+                 Name="SecondName"
+                 Width="120"/>
         
         <Label Content="Полных лет" 
                Grid.Column="1" 
@@ -97,8 +99,9 @@
                  Margin="254,90,0,0" 
                  Grid.Row="1"
                  TextWrapping="Wrap" 
-                 VerticalAlignment="Top" 
-                 Width="100"/>
+                 VerticalAlignment="Top"
+                 Name="Fullyears"
+                 Width="120"/>
         
         <Label Content="Дата просмотра" 
                Grid.Column="1" 
@@ -108,15 +111,7 @@
                VerticalAlignment="Top" 
                FontWeight="Bold"
                FontSize="15"/>
-        
-        <TextBox Grid.Column="1" 
-                 HorizontalAlignment="Left"
-                 Height="22"
-                 Margin="254,118,0,0" 
-                 Grid.Row="1" 
-                 TextWrapping="Wrap"
-                 VerticalAlignment="Top"
-                 Width="100"/>
+       
         
         <Label Content="Номер сопровождающего" 
                Grid.Column="1"
@@ -132,10 +127,11 @@
                  Height="23"
                  Margin="254,173,0,0" 
                  Grid.Row="1" 
+                 Name="PhoneTb"
                  TextWrapping="Wrap"
-                 Text="+7" 
+                 Text="" 
                  VerticalAlignment="Top" 
-                 Width="100"/>
+                 Width="120"/>
         
         <Label Content="Номер телефона" 
                Grid.Column="1"
@@ -151,10 +147,11 @@
                  Height="23" 
                  Margin="254,145,0,0" 
                  Grid.Row="1"
+                 Name="Phone"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
-                 Width="100" 
-                 Text="+7"/>
+                 Width="120" 
+                 Text="" TextChanged="Phone_TextChanged"/>
         
         <Button Content="Записать" 
                 x:Name="zap" Click="zap_Click" 
@@ -176,5 +173,12 @@
                 Вернуться на главную
             </Hyperlink>
         </TextBlock>
+        <DatePicker Grid.Column="1" 
+                    HorizontalAlignment="Left" 
+                    Margin="254,116,0,0" 
+                    Grid.Row="1"
+                    Name="Datedp"
+                    VerticalAlignment="Top"
+                    Width="120"/>
     </Grid>
 </Window>

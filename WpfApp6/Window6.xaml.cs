@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp6.Models;
 
 namespace WpfApp6
 {
@@ -22,7 +23,7 @@ namespace WpfApp6
         public Window6()
         {
             InitializeComponent();
-            AppConnect.database = new TorpedoEntities();
+            AppConnect.database = new TorpedoEntities1();
             PuplisListBox.ItemsSource = AppConnect.database.Puplis.ToList();
         }
 

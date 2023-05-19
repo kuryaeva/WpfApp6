@@ -1,0 +1,126 @@
+﻿<Page 
+    x:Class="WpfApp6.ViewFolder.PageFolder.MenuPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:WpfApp6.ViewFolder.PageFolder"
+    mc:Ignorable="d" 
+    d:DesignHeight="300"
+    d:DesignWidth="1600"
+    Background="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="375"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image
+            Source="/Image/616aeeec895ef_1920.png" 
+            Margin="10"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <TextBlock 
+                Grid.Row="0"
+                Text="ВАТЕРПОЛЬНАЯ ШКОЛА &quot;ТОРПЕДО&quot;" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center"
+                FontWeight="Bold" 
+                FontSize="65"
+                Foreground="White" 
+                FontFamily="Impact"
+                Width="962"/>
+            <StackPanel VerticalAlignment="Bottom" Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1">
+                <Button 
+                    Content="Воспитанники"
+                    Foreground="White"
+                    x:Name="PupilsButton"
+                    Click="PupilsButton_Click"
+                    Padding="30 0 30 0"
+                    Height="90" 
+                    FontWeight="Bold" 
+                    Margin="0 0 10 0"
+                    Background="Black"
+                    FontSize="18">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20 20 0 0"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button 
+                    Content="Тренера"
+                    Foreground="White"
+                    x:Name="CoachButton"
+                    Click="CoachButton_Click"
+                    Padding="30 0 30 0" 
+                    Height="90" 
+                    FontWeight="Bold" 
+                    Margin="10 0 10 0"
+                    Background="Black"
+                    FontSize="18">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20 20 0 0"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button 
+                    Content="Заявка на зачисление"
+                    Foreground="White"
+                    x:Name="ApplicationEnrollmentButton"
+                    Click="ApplicationEnrollmentButton_Click"
+                    Padding="30 0 30 0" 
+                    Height="90" 
+                    FontWeight="Bold" 
+                    Margin="10 0 10 0"
+                    Background="Black"
+                    FontSize="18">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20 20 0 0"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button 
+                    Content="Расписание просмотра"
+                    Foreground="White"
+                    x:Name="ViewingScheduleButton"
+                    Click="ViewingScheduleButton_Click"
+                    Padding="30 0 30 0"
+                    Height="90" 
+                    FontWeight="Bold" 
+                    Margin="10 0 10 0"
+                    Background="Black"
+                    FontSize="18">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20 20 0 0"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button 
+                    Content="Учет экипировки"
+                    Foreground="White"
+                    x:Name="EquipmentAccountingButton"
+                    Click="EquipmentAccountingButton_Click"
+                    Padding="30 0 30 0" 
+                    Height="90" 
+                    FontWeight="Bold" 
+                    Margin="10 0 0 0"
+                    Background="Black"
+                    FontSize="18">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20 20 0 0"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

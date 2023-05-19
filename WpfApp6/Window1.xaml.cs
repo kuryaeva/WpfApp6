@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp6.Class;
 
 namespace WpfApp6
 {
@@ -22,6 +23,8 @@ namespace WpfApp6
         public Window1()
         {
             InitializeComponent();
+            FrameNavigationClass.menuFrameClass = MenuFrame;
+            FrameNavigationClass.bodyFrameClass = BodyFrame;
         }
 
         private void EndB_Click(object sender, RoutedEventArgs e)
@@ -32,8 +35,7 @@ namespace WpfApp6
 
         private void DOBVOSPITAN_Click(object sender, RoutedEventArgs e)
         {
-            Window2 window2 = new Window2();
-            window2.Show();
+           
         }
 
         private void RasB_Click(object sender, RoutedEventArgs e)
@@ -56,14 +58,18 @@ namespace WpfApp6
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Window6 window6 = new Window6();
-            window6.Show();
+            //FrameNavigationClass.bodyFrameClass.Navigate(new Puplis());
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             Window8 window8 = new Window8();
             window8.Show();
+        }
+
+        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
         }
     }
 }

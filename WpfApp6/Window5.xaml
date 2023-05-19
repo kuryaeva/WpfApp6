@@ -43,7 +43,7 @@
                FontWeight="Bold"
                FontSize="20" 
                Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-        
+
         <Label Content="Сведения о ребенке" 
                HorizontalAlignment="Left" 
                Margin="85,19,0,0"
@@ -52,86 +52,83 @@
                Grid.ColumnSpan="2"
                FontWeight="Bold" 
                FontSize="16"/>
-        
+
         <Label Content="Имя"
                HorizontalAlignment="Left" 
                Margin="94,49,0,0"
                Grid.Row="1"
                VerticalAlignment="Top" 
                FontWeight="Bold"/>
-        
+
         <TextBox HorizontalAlignment="Left" 
                  Height="23" Margin="148,52,0,0"
                  Grid.Row="1" 
                  TextWrapping="Wrap"
                  VerticalAlignment="Top" 
-                 Width="95" 
+                 Width="112"
+                 Name="Name"
                  Grid.ColumnSpan="2"/>
-        
+
         <Label Content="Отчество" 
                HorizontalAlignment="Left" 
                Margin="69,77,0,0" 
                Grid.Row="1" 
                VerticalAlignment="Top" 
                FontWeight="Bold"/>
-        
+
         <TextBox HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="148,80,0,0"
                  Grid.Row="1" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
-                 Width="95" 
+                 Width="112" 
+                 Name="Surname"
                  Grid.ColumnSpan="2"/>
-        
+
         <Label Content="Фамилия" 
                HorizontalAlignment="Left" 
                Margin="69,105,0,0"
                Grid.Row="1"
                VerticalAlignment="Top" 
                FontWeight="Bold"/>
-        
+
         <TextBox HorizontalAlignment="Left" 
                  Height="23"
                  Margin="148,108,0,0" 
                  Grid.Row="1" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
-                 Width="95" 
+                 Width="112" 
+                 Name="Secondname"
                  Grid.ColumnSpan="2"/>
-        
+
         <Label Content="Дата рождения" 
                HorizontalAlignment="Left" 
                Margin="36,133,0,0"
                Grid.Row="1"
                VerticalAlignment="Top"
                FontWeight="Bold"/>
-        
-        <TextBox HorizontalAlignment="Left" 
-                 Height="23"
-                 Margin="148,136,0,0" 
-                 Grid.Row="1" 
-                 TextWrapping="Wrap" 
-                 VerticalAlignment="Top" 
-                 Width="95" 
-                 Grid.ColumnSpan="2"/>
-        
+
+
+
         <Label Content="Адрес проживания" 
                HorizontalAlignment="Left"
                Margin="19,164,0,0" 
                Grid.Row="1" 
                VerticalAlignment="Top" 
                FontWeight="Bold"/>
-        
+
         <TextBox HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="148,164,0,0" 
                  Grid.Row="1" 
+                 x:Name="Adress"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
-                 Width="95" 
+                 Width="136" 
                  Grid.ColumnSpan="2"/>
-        
+
         <Label Content="Наименование образовательного учреждения" 
                HorizontalAlignment="Left" 
                Margin="10,192,0,0"
@@ -139,139 +136,148 @@
                VerticalAlignment="Top"
                Grid.ColumnSpan="2"
                FontWeight="Bold" />
-        
+
         <TextBox Grid.ColumnSpan="2" 
                  HorizontalAlignment="Left" 
                  Height="23" 
-                 Margin="85,218,0,0" 
+                 Margin="74,218,0,0" 
                  Grid.Row="1" 
+                 x:Name="Nameschool"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
-                 Width="129"/>
-        
+                 Width="158"/>
+
         <Label Content="Сведения о родителе" 
                Grid.Column="1" 
                HorizontalAlignment="Left" 
-               Margin="387,19,0,0" 
+               Margin="366,19,0,0" 
                Grid.Row="1"
                VerticalAlignment="Top"
                Grid.ColumnSpan="2"
                FontWeight="Bold"
                FontSize="16"/>
-        
+
         <Label Content="Имя" 
                Grid.Column="1" 
                HorizontalAlignment="Left" 
-               Margin="398,48,0,0"
+               Margin="386,49,0,0"
                Grid.Row="1"
                VerticalAlignment="Top" 
                FontWeight="Bold"/>
-        
+
         <TextBox Grid.Column="1" 
                  HorizontalAlignment="Left" 
                  Height="23" 
-                 Margin="465,52,0,0" 
+                 Margin="438,52,0,0" 
                  Grid.Row="1" 
+                 Name="Nameparent"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" 
-                 Width="100" 
+                 Width="111" 
                  Grid.ColumnSpan="2"/>
-        
+
         <Label Content="Отчество" 
                Grid.Column="1" 
                HorizontalAlignment="Left" 
-               Margin="387,77,0,0"
+               Margin="369,74,0,0"
                Grid.Row="1"
                VerticalAlignment="Top" 
-               FontWeight="Bold"/>
-        
+               FontWeight="Bold" RenderTransformOrigin="-0.078,0.519"/>
+
         <Label Content="Фамилия" 
                Grid.Column="1" 
                HorizontalAlignment="Left"
-               Margin="386,105,0,0"
+               Margin="366,102,0,0"
                Grid.Row="1"
                VerticalAlignment="Top" 
                FontWeight="Bold"/>
-        
+
         <TextBox Grid.Column="1"
                  HorizontalAlignment="Left"
                  Height="23" 
-                 Margin="465,80,0,0" 
+                 Margin="438,77,0,0" 
                  Grid.Row="1"
+                 Name="Surnameparent"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
-                 Width="100" 
+                 Width="111" 
                  Grid.ColumnSpan="2"/>
-        
+
         <TextBox Grid.Column="1" 
                  HorizontalAlignment="Left" 
                  Height="23" 
-                 Margin="465,108,0,0"
+                 Margin="438,105,0,0"
                  Grid.Row="1" 
+                 Name="Secondnameparent"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
-                 Width="100" 
+                 Width="111" 
                  Grid.ColumnSpan="2"/>
-        
+
         <Label Content="Место работы" 
                Grid.Column="1" 
                HorizontalAlignment="Left" 
-               Margin="358,133,0,0"
+               Margin="341,133,0,0"
                Grid.Row="1" 
                VerticalAlignment="Top"
                FontWeight="Bold"/>
-        
+
         <TextBox Grid.Column="1"
                  HorizontalAlignment="Left" 
                  Height="23"
-                 Margin="465,136,0,0" 
-                 Grid.Row="1" 
+                 Margin="439,136,0,0" 
+                 Grid.Row="1"
+                 Name="Work"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
-                 Width="100" 
+                 Width="110" 
                  Grid.ColumnSpan="2"/>
-        
+
         <Label Content="Номер телефона" 
                Grid.Column="1"
                HorizontalAlignment="Left"
-               Margin="348,164,0,0" 
+               Margin="325,164,0,0" 
                Grid.Row="1"
                VerticalAlignment="Top"
                FontWeight="Bold"/>
-        
+
         <TextBox Grid.Column="1"
                  HorizontalAlignment="Left" 
                  Height="23" 
-                 Margin="465,164,0,0" 
+                 Margin="439,164,0,0" 
                  Grid.Row="1" 
+                 Name="Phoneparent"
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
-                 Width="100" 
+                 Width="110" 
                  Grid.ColumnSpan="2"/>
-        
+
         <Label Content="Информация о ком из родителей:" 
                Grid.Column="1" 
                HorizontalAlignment="Left"
-               Margin="348,192,0,0"
+               Margin="332,192,0,0"
                Grid.Row="1" 
                VerticalAlignment="Top"
                Grid.ColumnSpan="2"
                FontWeight="Bold"/>
-        
+
         <CheckBox Content="Мать"
                   Grid.Column="1"
                   HorizontalAlignment="Left"
-                  Margin="386,218,0,0"
+                  Margin="360,218,0,0"
                   Grid.Row="1" 
+                  Name="CheckM"
                   VerticalAlignment="Top"/>
-        
+
         <CheckBox Content="Отец"
-                  Grid.Column="2" 
+                  Grid.Column="1" 
                   HorizontalAlignment="Left"
-                  Margin="10,218,0,0" 
+                  Margin="461,218,0,0" 
                   Grid.Row="1" 
-                  VerticalAlignment="Top"/>
-        
+                  Name="CheckF"
+                  VerticalAlignment="Top" 
+                  Grid.ColumnSpan="2"/>
+
         <Button Content="Отправить заявку" 
                 x:Name="Otprav" Click="Otprav_Click" 
                 Grid.Column="1"
@@ -285,14 +291,24 @@
                 FontWeight="Bold"
                 Background="Black" 
                 FontSize="15"/>
-        
+
         <TextBlock HorizontalAlignment="Left" 
-             VerticalAlignment="Top" Margin="10,253,0,0" Grid.Row="1">
-            <Hyperlink Foreground="Black" Name="Endz"
+             VerticalAlignment="Top"
+                   Margin="10,253,0,0"
+                   Grid.Row="1">
+            <Hyperlink Foreground="Black" 
+                       Name="Endz"
                        Click="Endz_Click">
                 Вернуться на главную
             </Hyperlink>
         </TextBlock>
+        <DatePicker HorizontalAlignment="Left" 
+                    Margin="148,136,0,0" 
+                    Grid.Row="1" 
+                    Name="DateDP"
+                    VerticalAlignment="Top" 
+                    Grid.ColumnSpan="2" 
+                    Width="112"/>
 
 
 

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp6.Models;
 
 namespace WpfApp6
 {
@@ -23,11 +24,48 @@ namespace WpfApp6
         {
             InitializeComponent();
         }
-
+        
         private void Otprav_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Заявка отправлена!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+            if (!string.IsNullOrWhiteSpace(Name.Text) && !string.IsNullOrWhiteSpace(Surname.Text)
+               && !string.IsNullOrWhiteSpace(Secondname.Text) && !string.IsNullOrWhiteSpace(Nameschool.Text)
+                && !string.IsNullOrWhiteSpace(Adress.Text) && (!string.IsNullOrWhiteSpace(Nameparent.Text) && 
+                !string.IsNullOrWhiteSpace(Surnameparent.Text) && !string.IsNullOrWhiteSpace(Secondnameparent.Text) && !string.IsNullOrWhiteSpace(Work.Text)
+                && !string.IsNullOrWhiteSpace(Phoneparent.Text) && DateDP.SelectedDate != null))
+
+                {
+                    Enrollment enrollment = new Enrollment();
+                    enrollment.Name = Name.Text;
+                    enrollment.Surname = Surname.Text;
+                    enrollment.Secondname = Secondname.Text;
+                    enrollment.DateBirth = (DateTime)DateDP.SelectedDate;
+                    enrollment.Adress = Adress.Text;
+                    enrollment.Nameschool = Nameschool.Text;
+                    enrollment.Nameparent = Nameparent.Text;
+                    enrollment.Surname = Surnameparent.Text;
+                    enrollment.Secondname = Secondname.Text;
+                    enrollment.Placeofwork = Work.Text;
+                    enrollment.Phone = Phoneparent.Text;
+                   
+
+                    AppConnect.database.Enrollment.Add(enrollment);
+                    AppConnect.database.SaveChanges();
+                    
+
+
+                    MessageBox.Show("Заявка отправлена!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+                    this.Close();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Сначала заполните все поля!");
+                }
+
         }
+        
+        
+        
 
         private void Endz_Click(object sender, RoutedEventArgs e)
         {

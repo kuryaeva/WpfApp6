@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp6"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Window1" Height="900" Width="1600"
+        IsVisibleChanged="Window_IsVisibleChanged">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -22,179 +23,43 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Image Source="/Image/616aeeec895ef_1920.png" />
-        <Image Source="/Icons/free-icon-water-polo-1499864.png" 
-               Grid.Column="4" Margin="27,36,20,10" />
+        <Image Source="/Image/616aeeec895ef_1920.png" Margin="10,29,29,10" />
+
 
         <TextBlock Text="ВАТЕРПОЛЬНАЯ ШКОЛА &quot;ТОРПЕДО&quot;" 
                Grid.Column="1" 
                Grid.Row="0" 
                HorizontalAlignment="Center" 
-               Margin="40,57,33,0" 
+               Margin="162,92,150,0" 
                VerticalAlignment="Top"
                FontWeight="Bold" 
-               FontSize="27"
+               FontSize="65"
                Foreground="White" 
                FontFamily="Impact"
-               Width="402" Grid.ColumnSpan="3"/>
-
-        <Label Content="Мой профиль"
-               HorizontalAlignment="Left" 
-               Margin="20,5,0,0" 
-               VerticalAlignment="Top" 
-               FontSize="18"
-               Foreground="White"
-               Grid.Column="4" 
-               FontWeight="Bold" 
-               FontFamily="Times New Roman" />
-
-        <Label Content="Мои настройки" 
-               HorizontalAlignment="Left" 
-               Margin="18,198,0,0" 
-               Grid.Row="1"
-               FontSize="15" 
-               Foreground="Black" 
-               VerticalAlignment="Top"
-               Grid.Column="4"
-               FontWeight="Bold" />
-
-        <Label Content="Фамилия и Имя:"
-               Grid.Column="4" 
-               HorizontalAlignment="Left" 
-               Margin="12,10,0,0"
-               Grid.Row="1" 
-               VerticalAlignment="Top" 
-               Foreground="Black"
-                FontSize="15"
-               FontWeight="Bold"  />
-
-        <Label Content="Курятников Денис" 
-               Grid.Column="4" 
-               HorizontalAlignment="Left"
-               Margin="12,33,0,0" 
-               Grid.Row="1"
-               FontSize="15"
-               VerticalAlignment="Top"/>
-
-        <Label Content="Должность:"
-               Grid.Column="4" 
-               FontSize="15" 
-               HorizontalAlignment="Left" 
-               Margin="30,63,0,0"
-               Grid.Row="1" 
-               VerticalAlignment="Top" 
-               FontWeight="Bold" />
-
-        <Label Content="Администратор" 
-               FontSize="15" 
-               Grid.Column="4"
-               HorizontalAlignment="Left" 
-               Margin="20,84,0,0" 
-               Grid.Row="1"
-               VerticalAlignment="Top" 
-               Height="28" 
-               Width="122"/>
-
-        <Label Content="Номер телефона" 
-               Grid.Column="4" 
-               HorizontalAlignment="Left" 
-               Margin="15,112,0,0"
-               Grid.Row="1" 
-               VerticalAlignment="Top"
-               FontWeight="Bold" 
-               FontSize="15"/>
-
-        <Label Content="+7(910)-115-21-30" 
-               Grid.Column="4" 
-               HorizontalAlignment="Left" 
-               Margin="20,128,0,0" 
-               Grid.Row="1" 
-               VerticalAlignment="Top"
-               FontSize="13" >
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="8"/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Label Content="Пол:"
-               Grid.Column="4" 
-               HorizontalAlignment="Left" 
-               Margin="56,147,0,0" 
-               Grid.Row="1"
-               VerticalAlignment="Top"
-               FontWeight="Bold" 
-               FontSize="15" >
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="10"/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-
-        <Label Content="Мужской"
-               Grid.Column="4" 
-               HorizontalAlignment="Left" 
-               Margin="43,177,0,0"
-               Grid.Row="1" 
-               VerticalAlignment="Top" 
-               FontSize="14"/>
-
-        <Button Content="Выйти из профиля"
-                x:Name="EndB" Click="EndB_Click" 
-                Foreground="White" 
-                Grid.Column="4" 
-                HorizontalAlignment="Left" 
-                FontSize="13
-                " Margin="20,233,0,0" 
-                Grid.Row="1" 
-                VerticalAlignment="Top" 
-                Width="119" Height="31"
-                Background="Black"/>
+               Width="962" Grid.ColumnSpan="4"/>
 
 
-        <Button Content="Добавить воспитанника" 
-                x:Name="DOBVOSPITAN" Click="DOBVOSPITAN_Click" 
-                Foreground="White" 
-                HorizontalAlignment="Left" 
-                Margin="21,43,0,0" 
-                Grid.Row="1" 
-                VerticalAlignment="Top"
-                Width="185"
-                Height="47" 
-                FontWeight="Bold" 
-                Background="Black" 
-                Grid.ColumnSpan="2" 
-                FontSize="13">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </Button.Resources>
-        </Button>
 
-        <Button Content="Информация о воспитанниках"
+
+
+
+
+        <Button Content="Воспитанники"
                 Foreground="White"
                 HorizontalAlignment="Left"
-                Margin="21,159,0,0" 
-                Grid.Row="1"
+                Margin="294,198,0,0"
                 Click="Button_Click_2"
                 VerticalAlignment="Top"
-                Width="185" 
-                Height="47" 
+                Width="238" 
+                Height="82" 
                 FontWeight="Bold" 
                 Background="Black"
-                FontSize="11" 
-                Grid.ColumnSpan="2">
+                FontSize="18" Grid.ColumnSpan="2">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -206,16 +71,14 @@
         <Button Content="Заявка на зачисление"
                 Foreground="White" 
                 HorizontalAlignment="Left"
-                Margin="280,43,0,0" 
-                Grid.Row="1"
+                Margin="469,198,0,0"
                 Click="Button_Click"
                 VerticalAlignment="Top" 
-                Width="185" 
-                Height="47" 
+                Width="290" 
+                Height="81" 
                 FontWeight="Bold"
                 Background="Black" 
-                FontSize="13" 
-                Grid.Column="1" Grid.ColumnSpan="3">
+                FontSize="20" Grid.Column="1">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -223,19 +86,17 @@
             </Button.Resources>
         </Button>
 
-        <Button Content="Информация о соревнованиях"
+        <Button Content="Учет экипировки"
                 Foreground="White" 
                 HorizontalAlignment="Left"
-                Margin="69,159,0,0" 
-                Grid.Row="1" 
+                Margin="101,198,0,0" 
                 Click="Button_Click_1"
                 VerticalAlignment="Top"
-                Width="185" 
-                Height="47" 
+                Width="209" 
+                Height="82" 
                 FontWeight="Bold" 
                 Background="Black" 
-                FontSize="11" 
-                Grid.Column="1">
+                FontSize="20" Grid.Column="4">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -243,18 +104,17 @@
             </Button.Resources>
         </Button>
 
-        <Button Content="Информация о  тренерах" 
+        <Button Content="Тренера" 
                 Foreground="White"
                 HorizontalAlignment="Left"
-                Margin="280,159,0,0" 
-                Grid.Row="1" 
+                Margin="219,198,0,0" 
                 VerticalAlignment="Top"
-                Width="185"
-                Height="47" 
+                Width="240"
+                Height="82" 
+                FontSize="18"
                 Click="Button_Click_3"
                 FontWeight="Bold" 
-                Background="Black"
-                Grid.Column="1" Grid.ColumnSpan="3">
+                Background="Black" Grid.Column="1">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -266,21 +126,26 @@
                 x:Name="RasB" Click="RasB_Click" 
                 Foreground="White"
                 HorizontalAlignment="Left" 
-                Margin="69,43,0,0" 
-                Grid.Row="1" 
+                Margin="0,198,0,0" 
                 VerticalAlignment="Top"
-                Width="185" 
-                Height="47" 
+                Width="272" 
+                Height="82" 
                 FontWeight="Bold" 
-                Background="Black" 
-                Grid.Column="1" FontSize="13">
+                Background="Black" FontSize="20" Grid.Column="3" Grid.ColumnSpan="2">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Button.Resources>
         </Button>
-       
+        <Frame 
+     Name="MenuFrame"
+     NavigationUIVisibility="Hidden"
+            Grid.Row=" 0"/>
+        <Frame 
+     Name="BodyFrame"
+     NavigationUIVisibility="Hidden"/>
+
 
     </Grid>
 </Window>

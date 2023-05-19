@@ -26,9 +26,19 @@ namespace WpfApp6
         }
 
         private void AvtorizB_Click(object sender, RoutedEventArgs e)
+
         {
-            Window1 window1 = new Window1();
-            window1.Show();
+            var user = AppConnect.database.Admin.ToList().FirstOrDefault(p => p.Login == LoginTB.Text && p.Password == PasswordTb.Text);
+            if(user != null)
+            {
+                Window1 window1 = new Window1();
+                window1.Show();
+            } else
+            {
+                MessageBox.Show("Пользователь не найден!");
+            }
+            
+
         }
     }
 }

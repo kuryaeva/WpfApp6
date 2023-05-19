@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp6"
         mc:Ignorable="d"
-        Title="MainWindow" WindowStartupLocation="CenterScreen" WindowStyle="None" Height="450" Width="800">
+        Title="MainWindow" WindowStartupLocation="CenterScreen" WindowStyle="None" Height="900" Width="1600">
     <Grid >
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -25,34 +25,39 @@
 
         <Label Content="ВАТЕРПОЛЬНАЯ ШКОЛА &quot;ТОРПЕДО&quot;" Grid.Column="1" 
                Grid.Row="0" HorizontalAlignment="Center" 
-               Margin="71,56,82,0" VerticalAlignment="Top"
-               FontWeight="Bold" FontSize="30" Foreground="White" FontFamily="Impact"
-               Width="441"/>
+               Margin="84.6,116,104,0" VerticalAlignment="Top"
+               FontWeight="Bold" FontSize="65" Foreground="White" FontFamily="Impact"
+               Width="1005"/>
         <Label Content="Авторизация" Grid.Column="1
                " FontFamily="Times New Roman"
                HorizontalAlignment="Left" 
-               Margin="117,20,0,0"
+               Margin="344,81,0,0"
                Grid.Row="1" VerticalAlignment="Top" 
-               FontWeight="Bold" FontSize="34" 
+               FontWeight="Bold" FontSize="65
+               " 
                />
         <Label Content="Логин" Grid.Column="1"
                HorizontalAlignment="Left" 
-               Margin="117,69,0,0" Grid.Row="1" 
+               Margin="363,192,0,0" Grid.Row="1" 
                VerticalAlignment="Top" FontFamily="Times New Roman"
-               FontSize="22"/>
+               FontSize="45
+               " RenderTransformOrigin="0.487,3.974" Width="148"/>
         <Label Content="Пароль" Grid.Column="1" 
-               HorizontalAlignment="Left" Margin="117,109,0,0" 
+               HorizontalAlignment="Left" Margin="363,288,0,0" 
                Grid.Row="1" VerticalAlignment="Top"  
-               FontSize="22" FontFamily="Times New Roman"  Width="94"/>
+               FontSize="40" FontFamily="Times New Roman"  Width="138"/>
         <TextBox Grid.Column="1"
-                 HorizontalAlignment="Left" Height="33" 
-                 Margin="211,74,0,0" Grid.Row="1" 
+                 Name="LoginTB"
+                 HorizontalAlignment="Left" Height="56" 
+                 Margin="523,288,0,0" Grid.Row="1" 
                  TextWrapping="Wrap" Text=""
-                 VerticalAlignment="Top" Width="118"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left"
-                 Height="32" Margin="211,112,0,0" Grid.Row="1" 
+                 VerticalAlignment="Top" Width="196"/>
+        <TextBox Grid.Column="1" 
+                 Name="PasswordTb"
+                 HorizontalAlignment="Left"
+                 Height="52" Margin="520,202,0,0" Grid.Row="1" 
                  TextWrapping="Wrap" Text="" VerticalAlignment="Top" 
-                 Width="118" >
+                 Width="198" >
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -63,13 +68,13 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Button Content="Войти" x:Name="AvtorizB" Click="AvtorizB_Click" Grid.Column="1" HorizontalAlignment="Left" 
-                Margin="159,161,0,0" Grid.Row="1" VerticalAlignment="Top" 
-                Width="120" FontFamily="Times New Roman" FontWeight="Bold" FontSize="23
-                " Height="34" 
+                Margin="452,375,0,0" Grid.Row="1" VerticalAlignment="Top" 
+                Width="147" FontFamily="Times New Roman" FontWeight="Bold" FontSize="35
+                " Height="51" 
                 Background="Black" Foreground="White"/>
 
-        <Image Source="/Icons/free-icon-telegram-3536705.png" Grid.Row="1" Margin="10,231,141,14" />
-        <Image Source="/Icons/free-icon-vkontakte-3536628.png" Grid.Row="1" Margin="121,223,32,10" RenderTransformOrigin="0.5,0.5" >
+        <Image Source="/Icons/free-icon-telegram-3536705.png" Grid.Row="1" Margin="10,465,253,14" />
+        <Image Source="/Icons/free-icon-vkontakte-3536628.png" Grid.Row="1" Margin="286,461,1127,14" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" >
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -79,7 +84,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Source="/Icons/free-icon-youtube-3938035.png" Grid.Row="1" Margin="62,235,77,14" RenderTransformOrigin="0.5,0.5" >
+        <Image Source="/Icons/free-icon-youtube-3938035.png" Grid.Row="1" Margin="150,465,87,10" RenderTransformOrigin="0.5,0.5" >
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

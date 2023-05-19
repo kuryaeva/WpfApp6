@@ -7,18 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WpfApp6
+namespace WpfApp6.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Puplis
+    public partial class Vieviw
     {
         public int ID { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public string Middlename { get; set; }
-        public System.DateTime DateBirth { get; set; }
+        public string Full_years { get; set; }
+        public System.DateTime Datevieviwing { get; set; }
         public string Phone { get; set; }
+        public string Phonemaintainers { get; set; }
     }
 }
