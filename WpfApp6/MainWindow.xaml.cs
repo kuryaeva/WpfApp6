@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using WpfApp6.Class;
 
 namespace WpfApp6
 {
@@ -28,16 +17,16 @@ namespace WpfApp6
         private void AvtorizB_Click(object sender, RoutedEventArgs e)
 
         {
-            var user = AppConnect.database.Admin.ToList().FirstOrDefault(p => p.Login == LoginTB.Text && p.Password == PasswordTb.Text);
-            if(user != null)
+            var user = AppConnectClass.AppData.Admin.ToList().FirstOrDefault(p => p.Login == LoginTB.Text && p.Password == PasswordTb.Text);
+            if (user != null)
             {
-                Window1 window1 = new Window1();
-                window1.Show();
-            } else
+
+            }
+            else
             {
                 MessageBox.Show("Пользователь не найден!");
             }
-            
+
 
         }
     }

@@ -7,7 +7,13 @@
     mc:Ignorable="d" 
     Style="{DynamicResource BodyPageStyle}">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
         <StackPanel 
+            Grid.Row="1"
             Orientation="Vertical"
             VerticalAlignment="Top" 
             HorizontalAlignment="Left"
@@ -46,25 +52,27 @@
                 </StackPanel>
             </TextBlock>
         </StackPanel>
-        <Button
-            Content="Записать на просмотр"
-            x:Name="RecordViewingButton"
-            Click="RecordViewingButton_Click"
-            VerticalAlignment="Bottom"
-            HorizontalAlignment="Right"
-            Margin="20"
-            Style="{DynamicResource MainButton}"/>
-        <TextBlock
-            FontSize="20"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Bottom"
-            Margin="20">
-            <Hyperlink 
-                x:Name="BackHyperlink"
-                Click="BackHyperlink_Click"
-                Foreground="#000000">
-                Вернуться на главную
-            </Hyperlink>
-        </TextBlock>
+        <Grid Grid.Row="2">
+            <Button
+                Content="Записать на просмотр"
+                x:Name="RecordViewingButton"
+                Click="RecordViewingButton_Click"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="0 0 20 0"
+                Style="{DynamicResource MainButton}"/>
+            <TextBlock
+                FontSize="20"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Margin="20 0 0 0">
+                <Hyperlink 
+                    x:Name="BackHyperlink"
+                    Click="BackHyperlink_Click"
+                    Foreground="#000000">
+                    Вернуться на главную
+                </Hyperlink>
+            </TextBlock>
+        </Grid>
     </Grid>
 </Page>
